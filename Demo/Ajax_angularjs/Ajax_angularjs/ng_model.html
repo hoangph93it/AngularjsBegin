@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head ng-app="ngmodelModule">
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        .number_input {
+            -webkit-transition: all linear 0.5s;
+            transition: all linear 0.5s;
+            background: transparent;
+        }
+
+            .number_input.ng-invalid {
+                color: white;
+                background: red;
+            }
+    </style>
+</head>
+<body>
+    <form name="myForm" ng-controller="ngmodelControler">
+        <p>Bạn chỉ được nhập vào chữ số!</p>
+        <input type="text" name="input_number" class="number_input" value="" ng-model="valid" ng-pattern="/^\d+$/" />
+    </form>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Controllers/ngmodelController/ng_modelController.js"></script>
+</body>
+</html>

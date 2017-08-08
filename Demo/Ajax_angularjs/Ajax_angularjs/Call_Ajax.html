@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="ajaxcallModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <table ng-controller="ajaxcallControler">
+        <tr>
+            <th>Họ tên</th>
+            <th>Nhiệm vụ</th>
+            <th>Thứ hạng</th>
+        </tr>
+        <tr ng-repeat="item in listEmployee">
+            <td>{{item.HovaTen}}</td>
+            <td>{{item.MNV}}</td>
+            <td>{{item.Rank}}</td>
+        </tr>
+    </table>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Controllers/ajaxcallControler/ajaxcallControler.js"></script>
+</body>
+</html>

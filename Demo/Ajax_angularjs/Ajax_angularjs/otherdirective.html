@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="ortherdirectiveModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        .display_none {
+            display: none;
+        }
+
+        .display_block {
+            display: block;
+        }
+
+        .my_number {
+            -webkit-transition: all linear 0.5s;
+            transition: all linear 0.5s;
+            background: transparent;
+        }
+
+            .my_number.ng-invalid {
+                color: white;
+                background: red;
+            }
+    </style>
+</head>
+<body>
+    <form name="myForm" ng-controller="ortherdirectiveController">
+        <p>{{message.title}}</p>
+        <p>{{message.number_one}}</p>
+        <input type="text" name="number_one" class="my_number" ng-model="number_one" ng-required="true" ng-pattern="/^[0-9]+$/" ng-keyup="show_result()" autofocus />
+        <p>{{message.number_two}}</p>
+        <input type="text" name="number_two" class="my_number" ng-model="number_two" ng-required="true" ng-pattern="/^[0-9]+$/" ng-keyup="show_result()" />
+        <div ng-class="style_display">
+            {{message.phep_cong}}:{{result.phep_cong}}<br />
+            {{message.phep_tru}}:{{result.phep_tru}}<br />
+            {{message.phep_nhan}}:{{result.phep_nhan}}<br />
+            {{message.phep_chia}}:{{result.phep_chia}}
+        </div>
+    </form>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Controllers/ortherdirectiveController/ortherdirectiveController.js"></script>
+</body>
+</html>

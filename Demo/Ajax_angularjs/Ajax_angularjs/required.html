@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="requiredModule">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        .number_input {
+            -webkit-transition: all linear 0.5s;
+            transition: all linear 0.5s;
+            background: transparent;
+        }
+
+            .number_input.ng-invalid {
+                color: white;
+                background: red;
+            }
+    </style>
+</head>
+<body>
+    <form name="myForm" ng-controller="requiredController">
+        <p>Hãy nhập vào dữ liệu!</p>
+        <input type="text" name="input_number" class="number_input" ng-model="valid" required autofocus />
+    </form>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Controllers/requiredController/requiredController.js"></script>
+</body>
+</html>

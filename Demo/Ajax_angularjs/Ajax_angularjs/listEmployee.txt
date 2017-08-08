@@ -1,0 +1,22 @@
+[
+  {
+    "HovaTen": "Nguyen Thanh Linh",
+    "MNV": "B001",
+    "Rank": "8.0"
+  },
+  {
+    "HovaTen": "Nguyen Dinh Huan",
+    "MNV": "B222",
+    "Rank": "7.0"
+  },
+  {
+    "HovaTen": "Nguyen Dang Khanh",
+    "MNV": "B123",
+    "Rank": "6.8"
+  },
+  {
+    "HovaTen": "Hoang Van Quan",
+    "MNV": 20150459,
+    "Rank": "6.6"
+  }
+]
